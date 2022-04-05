@@ -1,0 +1,12 @@
+<div class="search-container">
+    <div>
+        <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <button class="home-button" routerLink='/home'>
+                <span>Herald</span>
+              </button>
+            <input class="search-input" name="search" ngModel placeholder="Search for the apps you like on the playstore ! " />
+            <button class="search-button">Let's go !</button>
+        </form>
+
+    </div>
+</div>

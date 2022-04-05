@@ -1,0 +1,31 @@
+<div>
+    <button class="search-button">Home</button>
+</div>
+
+
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select panelClass="sort-select" [(ngModel)]="sort">
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="theme">Theme</mat-option>
+            <mat-option value="type">Type</mat-option>
+            <mat-option value="created">Created</mat-option>
+            <mat-option value="updated">Updated</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="wallets">
+    <div class="wallet">
+        <div class="wallet-thumb-container">
+            <img class="wallet-thumbnail" src="assets/img/Iroha.jpg" alt="thumbnail" />
+        </div>
+        <div class="wallet-description">
+            <p class="wallet-name">RPGs</p>
+            <div class="wallet-theme">
+                <img class="wallet-theme" src="assets/img/Quetza.jpg" alt="slug" />
+            </div>
+        </div>
+    </div>
+</div>
