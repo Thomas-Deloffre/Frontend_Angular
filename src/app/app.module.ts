@@ -32,6 +32,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { BodyComponent } from './components/dashboard/body/body.component';
+import { WalletsComponent } from './components/wallets/wallets.component';
+import { KeywordListComponent } from './components/keyword-list/keyword-list.component';
+import { LoginComponent } from './components/login/login.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { WalletsKeywordsComponent } from './components/wallets-keywords/wallets-keywords.component';
+import { NotificationSettingsComponent } from './components/notification-settings/notification-settings.component';
+import { ErrorsComponent } from './components/errors/errors.component';
 
 
 @NgModule({
@@ -48,6 +57,14 @@ import { RouterModule } from '@angular/router';
     UserListComponent,
     UserAdminCreateComponent,
     NavbarComponent,
+    BodyComponent,
+    WalletsComponent,
+    KeywordListComponent,
+    LoginComponent,
+    SigninComponent,
+    WalletsKeywordsComponent,
+    NotificationSettingsComponent,
+    ErrorsComponent,
 
     
 
@@ -55,6 +72,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
@@ -72,8 +91,9 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    RouterModule.forRoot(routes ,{ useHash: true})
-
+    AppRoutingModule,
+    RouterModule.forRoot(routes ,{ useHash: true}),
+  
   ],
   providers: [
     {

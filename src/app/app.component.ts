@@ -3,7 +3,8 @@ import { User } from 'src/app/common/data/api-java-user-modele/user';
 import { TokenStorageService } from './common/services/token-storage.service';
 import { Router } from '@angular/router';
 
-interface SideNavToggle {
+
+export interface SideNavToggle {
   screenWidth: number;
   collapsed: boolean;
 }
@@ -15,18 +16,20 @@ interface SideNavToggle {
 })
 export class AppComponent {
   title = 'Herald, the Appstore Intelligence';
-  user: User = new User();
+  /* user: User = new User();
 
-  constructor(private tokenStorage: TokenStorageService, private router: Router) { }
+   constructor(private tokenStorage: TokenStorageService, private router: Router) { }
 
   ngOnInit(): void {
     this.user = this.tokenStorage.getUser();
-  }
+  }  */
   
   isSideNavColapsed = false;
   screenWidth = 0;
+  
 
-  onToggleSideNav(data: any):void {
+  
+  onToggleSideNav(data: SideNavToggle | any ):void {
     this.screenWidth = data.screenWidth;
     this.isSideNavColapsed = data.collapsed;
     console.log(this.screenWidth)
@@ -36,4 +39,5 @@ export class AppComponent {
 
 
 }
+
 

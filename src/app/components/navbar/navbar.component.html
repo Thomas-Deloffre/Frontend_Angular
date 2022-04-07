@@ -1,18 +1,48 @@
-<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': '' ">
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
     <div class="logo-container">
         <button class="logo" (click)="toggleCollapse()">
             <img class="fal.fa-times close-icon" source src="assets/img/owl_icon2.png" style="width: 40px; height: 32px;">
         </button>
         <div class="logo-text" *ngIf="collapsed">My Menu</div>
         <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
-          <mat-icon class="fal.fa-times close-icon" style="color: aliceblue;">cancel</mat-icon>
+          <i class="fal fa-times close-icon" style="color: aliceblue;"></i>
         </button>
     </div>
     <ul class="sidenav-nav">
-        <li class="sidenav-nav-items" *ngfor="let data of navData">
-            <a class="sidenav-nav-link" [routerLink]="[data.routerLink]">
-                <i class="sidenav-link-icon" [class]="data.icon"></i>
-                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink1]">
+                <i class="sidenav-link-icon" [class]="data.icon1"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label1}}</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink2]">
+                <i class="sidenav-link-icon" [class]="data.icon2"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label2}}</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink3]">
+                <i class="sidenav-link-icon" [class]="data.icon3"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label3}}</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink4]">
+                <i class="sidenav-link-icon" [class]="data.icon4"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label4}}</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink5]">
+                <i class="sidenav-link-icon" [class]="data.icon5"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label5}}</span>
+            </a>
+        </li>
+        <li class="sidenav-nav-items" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink6]">
+                <i class="sidenav-link-icon" [class]="data.icon6"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label6}}</span>
             </a>
         </li>
     </ul>
@@ -20,5 +50,5 @@
 
 
 
+<script src="https://kit.fontawesome.com/c2b881bcf7.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />

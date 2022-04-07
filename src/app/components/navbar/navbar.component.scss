@@ -1,5 +1,5 @@
 .sidenav {
-    background: transparent;
+    background: rgba(38, 50, 56, .65);
     transition: all .5s ease;
     position: fixed;
     z-index: 1;
@@ -12,6 +12,7 @@
     .logo-container {
         display: flex;
         align-items: center;
+        margin-left: 0.2rem;
         padding: 0.938rem 0.938rem 0 0.938rem;
         width: 100%;
         .logo {
@@ -56,6 +57,7 @@
     list-style: none;
     padding: 0.938rem;
     margin: 0;
+    margin-left: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,20 +70,22 @@
     .sidenav-nav-link {
         display: flex;
         align-items: center;
-        height: 3rem;
+        margin-left: 0.5rem;
+        height: 4rem;
         color: #f3f3f3;
         text-decoration: none;
         border-radius: 0.625rem;
         transition: all .3s ease;
         .sidenav-link-icon {
-            font-size: 22px;
+            font-size: 25px;
             width: 2rem;
             min-width: 2rem;
             margin: 0 0 0.5rem;
             text-align: center;
         }
         .sidenav-link-text {
-            margin-left: 1.5rem
+            margin-left: 2.1rem;
+            font-size: medium;
         }
     }
     .sidenav-nav-item:hover {
