@@ -1,4 +1,5 @@
+<app-app-search></app-app-search>
 <app-navbar (OnToggleSideNav)="onToggleSideNav($event)"></app-navbar>
-<app-app-search>
-</app-app-search>
-<router-outlet></router-outlet>
+<app-body>
+    [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"
+</app-body>

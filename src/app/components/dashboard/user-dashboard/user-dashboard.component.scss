@@ -5,13 +5,13 @@
 .filters {
     max-width: 1200px;
     margin: 20px auto;
-    margin-top: 100px;
-    padding-left: 20px;
+    margin-top: 50px;
+    padding-left: 100px;
 }
 
 ::ng-deep {
     .mat-form-field-infix {
-        background-color: #141d66;
+        background-color: #291a6b;
     }
     .mat-select-value,
     .mat-select-arrow,
@@ -30,6 +30,11 @@
     }
     .mat-form-field-apperance-legacy .mat-form-field-underline {
         background-color: #fff !important;
+    }
+    .mat-form-field-label {
+        color: #fff !important;
+        padding-left: 5px !important;
+        font-weight: 500 !important;
     }
 }
 

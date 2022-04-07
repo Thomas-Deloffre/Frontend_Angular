@@ -2,12 +2,9 @@ import { Component } from '@angular/core';
 import { User } from 'src/app/common/data/api-java-user-modele/user';
 import { TokenStorageService } from './common/services/token-storage.service';
 import { Router } from '@angular/router';
+import { SideNavToggle } from 'src/app/common/data/nav-toggle'
 
 
-export interface SideNavToggle {
-  screenWidth: number;
-  collapsed: boolean;
-}
 
 @Component({
   selector: 'app-root',
@@ -16,28 +13,30 @@ export interface SideNavToggle {
 })
 export class AppComponent {
   title = 'Herald, the Appstore Intelligence';
-  /* user: User = new User();
+   user: User = new User();
 
    constructor(private tokenStorage: TokenStorageService, private router: Router) { }
 
   ngOnInit(): void {
     this.user = this.tokenStorage.getUser();
-  }  */
+  }  
   
-  isSideNavColapsed = false;
+  isSideNavCollapsed = false;
   screenWidth = 0;
+  collapsed = false;
   
 
   
-  onToggleSideNav(data: SideNavToggle | any ):void {
+  onToggleSideNav(data: SideNavToggle | any):void {
     this.screenWidth = data.screenWidth;
-    this.isSideNavColapsed = data.collapsed;
+    this.isSideNavCollapsed = data.collapsed;
     console.log(this.screenWidth)
-    console.log(this.isSideNavColapsed)
+    console.log(this.isSideNavCollapsed)
     
   }
 
 
 }
+
 
 

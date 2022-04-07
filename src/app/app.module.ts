@@ -43,6 +43,8 @@ import { NotificationSettingsComponent } from './components/notification-setting
 import { ErrorsComponent } from './components/errors/errors.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +73,7 @@ import { ErrorsComponent } from './components/errors/errors.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CommonModule,
     RouterModule,
@@ -93,6 +96,7 @@ import { ErrorsComponent } from './components/errors/errors.component';
     MatListModule,
     AppRoutingModule,
     RouterModule.forRoot(routes ,{ useHash: true}),
+    
   
   ],
   providers: [
